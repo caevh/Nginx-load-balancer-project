@@ -17,7 +17,9 @@ export FLASK_APP=app.py
 
 python -m flask run
 
-- You should now have a working hello world flask app.py file. 
+- You should now have a working hello world flask app.py file.
+
+
 
 Step 2 - Getting flask to work with a Dockerfile 
 - Create a requirements.txt file and input flask. This will be used by the docker file to import flask. 
