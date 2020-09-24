@@ -3,7 +3,7 @@
 Step 1 - getting the flask app working:
 - Create a project folder e.g. load-balancer.
 - Create a .py file for the hello world flask code, e.g. app.py. Note: Do not call your .py file flask.py.
-- At this point you may or may not want to test the app in a virtual .env environment.
+- At this point you may, or may not, want to test the app in a virtual .env environment.
 - Paste the code from app.py above into your app.py. 
 - You now need to tell your terminal the application to work with by exporting the FLASK_APP environment variable. 
 
