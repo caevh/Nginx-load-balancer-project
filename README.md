@@ -19,4 +19,10 @@ python -m flask run
 
 - You should now have a working hello world flask app.py file. 
 
-Step 2 - Getting flask to work with a Dockerfile
+Step 2 - Getting flask to work with a Dockerfile 
+- create a file called Dockerfile and input the following.
+FROM python:3
+COPY . /app 
+WORKDIR /app
+RUN pip install -r requirements.txt
+CMD ["flask", "run", "--host=0.0.0.0"] 
