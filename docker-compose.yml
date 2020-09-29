@@ -1,0 +1,15 @@
+version: "3.8"
+services: 
+    web:
+        build: .
+        ports: 
+            - "8000:5000"
+        volumes: 
+            - .:/code
+        environment: 
+            FLASK_ENV: development
+    mginx:
+        image: nginx:latest
+        container_name: nginx_reverseproxy
+        ports:
+            - 80:80
